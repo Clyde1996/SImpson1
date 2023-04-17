@@ -1,0 +1,182 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F7CA18;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main-column {
+    padding: 0% 15%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4B77BE;
+    color: white;
+}
+
+.ohPinaise {
+padding: 10px;
+font-size: 35px;
+}
+
+
+/* le contenu inclus le nav, main, aside*/
+.contenu {
+    display: flex;
+    padding: 50px 20px;
+    background-color: white;
+    font-weight: 550;
+    font-size: 1.05em;
+}
+
+nav { 
+    background-color: #4B77BE;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 320px;
+    text-align: center;
+    word-spacing: 1 rem;
+    flex: 1;
+}
+
+ul {
+list-style-type: none;
+padding: 7px;
+}
+
+li {
+    padding: 5px;
+}
+a {
+    color: white;  
+}
+
+h1 {
+    color: #F3C13A;
+    padding: 20px 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 0 1%;
+    flex: 2;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 250%;
+    background-color: #4B77BE;
+    color: white;
+    padding-top : 20px;
+    margin-top: 5px;
+    flex: 1;
+} 
+
+.matt-txt {
+    text-align: justify;
+    padding: 0 10%;
+    margin-top: 5px;
+}
+
+aside img {
+    width: 70%;
+    padding-left: 0 20px;
+    border: solid 1px white;
+    align-items: center;
+
+}
+header img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #1F4788 ;
+    color: white;
+    padding: 10px;
+    font-weight: 550;
+    font-size: 1.2em;
+}
+
+
+
+/* Tablet/Phone Mode *******************************************************/
+
+
+@media screen and (max-width:768px){
+
+    body {
+        background-color: #F7CA18;
+        flex: 1 100%;
+    }
+    
+    #main-column{
+        padding: 0% 7%;
+    }
+
+    header {
+     display: flex;
+     justify-content:  center;
+     align-items: center;
+     width: 100%;
+    }
+
+    .contenu {
+        display: block;
+        width: 100%;
+    }
+
+    nav {
+        padding: 0;
+        margin: auto;
+        width: 100%;
+        align-content : flex-end;
+    }
+
+   
+
+    main {
+        display: block;
+        padding: auto;
+        margin: auto;
+        width: 100%;
+    }
+
+    aside {
+        display: block;
+        padding: auto;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    aside img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    footer { 
+        width: 100%;
+        align-items: center;
+
+    }
+    
+    
+}
